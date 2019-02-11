@@ -7,7 +7,7 @@ rust implement simple http protocol file server
 * [download release version](https://github.com/war1644/httpserver-rs/releases/download/0.1.0/rs)
 * chmod +x ./rs
 * ./rs
-* request your http://ip:7878/xxxx or [http://127.0.0.1:7878/xxxx](http://127.0.0.1:7878/xxxx) 
+* request http://your_ip:7878/xxxx or [http://127.0.0.1:7878/xxxx](http://127.0.0.1:7878/xxxx) 
 
 ## build and run 
 cargo run
