@@ -1,6 +1,7 @@
 # httpserver-rs
 rust implement simple http protocol file server
-一个小型文件服务器，可用于局域网／广域网之间快速传输文件
+
+一个小型文件(http协议)服务器，可用于局域网／广域网之间快速传输文件或展示html网页
 
 ## use 
 * [download release version](https://github.com/war1644/httpserver-rs/releases)
