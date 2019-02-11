@@ -1,11 +1,6 @@
-use std::io::{BufReader, BufRead, Read, Write};
-use std::fs;
-use std::io;
+use std::io::{self, BufReader, BufRead, Read, Write};
+use std::fs::File;
 use std::net::{TcpListener,TcpStream};
-//use std::time::Duration;
-use std::str;
-use std::net::SocketAddr;
-
 
 pub struct Http;
 impl Http
@@ -75,7 +70,7 @@ impl Http
     ///
     fn read_file(filename: &str) -> io::Result<Vec<u8>> {
         let mut file_content = vec![];
-        fs::File::open(&filename)?.read_to_end(&mut file_content)?;
+        File::open(&filename)?.read_to_end(&mut file_content)?;
         Ok(file_content)
     }
 }
